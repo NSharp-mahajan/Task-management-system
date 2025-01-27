@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to bottom, #c4cceb, #eaeff4);
+    color: black;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Sidebar Section */
+.sidebar {
+    width: 250px; background: #ffffff; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; padding: 20px 0; position: fixed; top: 0; left: 0; height: 100vh;
+}
+
+.sidebar .brand {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.sidebar .brand h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+.sidebar .menu {
+    list-style: none;
+}
+
+.sidebar .menu li {
+    margin: 15px 0;
+}
+
+.sidebar .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar .menu a i {
+    margin-right: 13px;
+    font-size: 18px;
+}
+
+.sidebar .menu a.active,
+.sidebar .menu a:hover {
+    background: #1d77fd;
+    color: #fff;
+}
+
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.sidebar .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Main Content Section */
+.main-content { margin-left: 250px; padding: 20px; display: flex; flex-direction: column; height: calc(100vh - 40px); /* Adjust for padding */ overflow-y: auto; /* Allows scrolling if content overflows */ }
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: black;
+}
+
+.header p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.projects { display: flex; gap: 25px; margin-top: 20px; }
+
+.project-card {
+    background: linear-gradient(to bottom right, #FFDEE9, #B5FFFC);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.one{
+    background:white;
+}
+.two{
+    background: white; 
+}
+.three{
+    background: white; 
+
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #000000;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.task{
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #1d77fd;
+    color: white;
+    border: none;
+}
+.task:hover{
+    background-color: #1d69db;
+}
+
+.button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #ffffff;
+    color: ghostwhite;
+    }
+
+    .button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    }
+
+    .button:hover span {
+    color: rgb(51, 45, 45);
+    }
+
+    .button::before,
+    .button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    }
+
+    .button::before {
+    content: "";
+    background: #1d77fd;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+
+    .button:hover::before {
+    transform: translate3d(100%, 0, 0);
+    }
+
+    .year-calendar-container {
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .year-calendar-container h2 {
+        margin-bottom: 20px;
+        color: #1d77fd;
+    }
+    
+    #year-calendar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .month {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #f9f9f9;
+    }
+    
+    .month h3 {
+        text-align: center;
+        color: #1d77fd;
+        margin-bottom: 10px;
+    }
+    
+    .days-row, .dates-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+    }
+    
+    .day-name, .date {
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .date {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .date.blank {
+        background: transparent;
+        border: none;
+    }
+    
+    .date:hover {
+        background: #1d77fd;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .bottom-section{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        padding: 20px;
+        background: white; 
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap; 
+    }    
+   
+
+.calendar-container, .tasks-container {
+    flex: 1;
+    min-width: 300px; /* Ensures layout doesn't break on small screens */
+    padding: 20px;
+    background: linear-gradient(to bottom, #c4cceb, #eaeff4);
+
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Adds a maximum width for better centering */
+}
+    
+    .calendar-container h3, .tasks-container h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #1d77fd;
+    }
+    
+    .calendar-container table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    .calendar-container th, .calendar-container td {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+    }
+    
+    .calendar-container td:hover {
+        background-color: #1d77fd;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .tasks-container ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .tasks-container li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    .tasks-container li span {
+        font-size: 14px;
+        color: gray;}
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 4;
+    }
+}
+
+/* Notification Icon */
+.notify-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #1d77fd;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.notify-icon i {
+    font-size: 20px;
+}
+
+.notify-icon:hover {
+    background-color: #1d69db;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 { margin: 0; color: rgb(7, 4, 4); }
+.view-all { background-color: #1d77fd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+} 
+
+.notification { border-bottom: 1px solid #e0e0e0; padding: 10px 0; } 
+
+.notification:last-child { border-bottom: none; } .notification h3 { margin: 0; font-size: 1.2em; color: black; } .notification p { margin: 5px 0 0; color: #110f0f; }

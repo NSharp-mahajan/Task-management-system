@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="brand">
+            <h2><i class="fas fa-tasks"></i><a href="Home.html">Task Manager</a></h2>
+        </div>
+
+        <ul class="menu">
+            <li><a href="Home.html" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="About.html"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-list"></i> All Tasks</a></li>
+            <li><a href="#"><i class="fa-regular fa-circle-check"></i> Completed</a></li>
+            <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Log Out</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+
+        <div class="profile">
+            <img src="Images/Person.jpeg" alt="Profile">
+            <div class="profile-info">
+                <p>Natansh Mahajan</p>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content fade-in">
+        <header class="header">
+    <div class="notify-icon" onclick="showNotification()">
+        <i class="fas fa-bell"></i>
+    </div>
+
+            <h1>Welcome Back, Natansh Mahajan! Good to see you.👋</h1>
+            <p>Here's an overview of your progress and tasks. Stay Productive!</p>
+            <div class="header-buttons">
+                <button class="task">Add Task</button>
+                <Button class="task">View reports</Button>
+
+            </div>
+        </header>
+    
+        <div class="projects">
+            <div class="project-card one">
+                <h3>My daily tasks</h3>
+                <p>Here you can update and look out for your specific tasks to do in your daily routine </p>
+                <button class="button"> <span>View Details</span></button>
+            </div>
+    
+            <div class="project-card two">
+                <h3>Personal Project</h3>
+                <p>Track your project details and make it well organize with the project reports and the graphs</p>
+                <button class="button"> <span>Continue</span></button>
+            </div>
+    
+            <div class="project-card three">
+                <h3>Team Collaboration</h3>
+                <p>Collaborate with your team on ongoing projects. Use our premium feature to make the whole task visible to your full team </p>
+                <button class="button"> <span>View Details</span></button>
+            </div>
+        </div>
+    
+        <div class="bottom-section">
+            <div class="calendar-container">
+                <h3>January 2025</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mo</th>
+                            <th>Tu</th>
+                            <th>We</th>
+                            <th>Th</th>
+                            <th>Fr</th>
+                            <th>Sa</th>
+                            <th>Su</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                        </tr>
+                        <tr>
+                            <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+                        </tr>
+                        <tr>
+                            <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="tasks-container">
+                <h3>My Tasks (05)</h3>
+                <ul>
+                    <li><input type="checkbox" checked> Make a project <span>Today</span></li>
+                    <li><input type="checkbox"> To do manager <span>Today</span></li>
+                    <li><input type="checkbox"> Market overview keynote <span>Tomorrow</span></li>
+                    <li><input type="checkbox"> Project research <span>Tomorrow</span></li>
+                    <li><input type="checkbox"> Prepare invoices <span>This week</span></li>
+                </ul>
+                <button class="task">Have an overview</button>
+            </div>
+        </div>
+
+        <div class="container"> <div class="header">
+        <h2>Activities Notification</h2> 
+        <button class="view-all">View All</button>
+        </div>
+        <div class="notification"> <h3>Daily Tasks Report</h3> <p>03 January, 2025</p> <p>Your last three days task is pending. You are lacking motivation and consistency in the daily tasks. Have a look at your daily tasks first.</p> </div> <div class="notification"> <h3>Team Collaboration</h3> <p>Newly added</p> <p>We have recently added the team collaboration event here. go check it out fast! Now you can go and Collaborate with your friends and clients to do your work in an efficient way
+        </p> </div> </div>
+    </div>
+</body>
+</html>
+<script src="JS/Home.js"></script>

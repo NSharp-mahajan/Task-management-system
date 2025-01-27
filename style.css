@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: Roboto;
+    background: url(TaskManager\ Background.png) no-repeat center center fixed;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0066ff;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    display: flex;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+    justify-content: space-between;
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    
+}
+
+/* Body of the page */
+.content {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    margin: 140px;
+}
+
+p#heading:hover {
+    background-color: white;
+    transition: 2s;
+    border-radius: 15px;
+    color: #0066ff;
+    margin: 10px;
+    padding: 14px;
+}
+
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  a{
+    text-decoration: none;
+    color:white;
+  }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero-section .text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-section button.Know {
+    background-color: #2b8cf3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hero-section button.Know:hover {
+    background-color: #0056D2;
+}
+
+.footer {
+    background-color: #0066ff;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar .links {
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .hero-section .text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .text p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-section button.Know {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .content {
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    button {
+        padding: 1em 2em;
+        font-size: 10px;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 15px 5px;
+    }
+
+    .footer a {
+        margin: 0 5px;
+    }
+}
+
+/* Keyframe Animations */
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in from left effect */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide-in from right effect */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation Classes */
+.animate {
+    opacity: 0;
+    animation-fill-mode: forwards; /* Ensures the animation ends in the final state */
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+    animation-fill-mode: forwards; /* Final state remains visible */
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+    animation-fill-mode: forwards; /* Final state remains visible */
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s ease-out;
+    animation-fill-mode: forwards; /* Final state remains visible */
+}
+
+/* Navbar Links Animation */
+.link-animate {
+    display: inline-block;
+    position: relative;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.link-animate::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.link-animate:hover {
+    color: #ffffff; /* Hover color */
+    transform: scale(1.1);
+}
+
+.link-animate:hover::after {
+    width: 100%;
+}
+
+/* Hero Section Button Animation */
+button.Know {
+    animation: fadeIn 1.8s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+button.Know:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.1);
+}
+
+/* Scroll Triggered Animation */
+body {
+    overflow-x: hidden; }
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

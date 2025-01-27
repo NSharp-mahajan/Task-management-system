@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Planner</title>
+    <link rel="stylesheet" href="CSS/About.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="logo animate fade-in">Dream Planner</div>
+        <div class="links">
+            <a href="Home.html" class="link-animate">Home</a>
+            <a href="About.html" class="link-animate about">About</a>
+            <a href="All_Tasks.html" class="link-animate">All Tasks</a>
+            <a href="Completed.html" class="link-animate">Completed</a>
+            <a href="Calendar.html" class="link-animate">Calendar</a>
+            <a href="Forms.html" class="link-animate">SignUp</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>Hello, My Name Is <span>Natansh Mahajan</span></h1>
+            <p class="subtitle">A Creative Program & A Young Tech Enthusiast</p>
+            <p class="subtitle">Welcome to my Task Manager System, Helping You Stay Ahead, Every Day</p>
+            <a href="#about" class="button" id="know-more">Know More</a>
+        </div>
+        <div class="image-section">
+            <img src="Images/me.jpg" alt="First image of Natansh" class="profile-image">
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <div class="about-image">
+            <img src="Images/me2.jpg" alt="Second Image of Natansh" class="profile-image">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi, I’m Natansh Mahajan, a first-year Computer Science Engineering student specializing in AI/ML at Chitkara University.I am a tech enthusiast with a deep interest in programming, data analytics, and cybersecurity. Apart from academics, I enjoy exploring creative outlets like UI UX and experimenting with new technologies.look forward to making a meaningful impact in my field and beyond.
+            </p>
+            <p>Punjab, India</p>
+        </div>
+    </div>
+
+    <div class="services-section">
+        <h2>My Services</h2>
+        <div class="services-container">
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="Images/ui ux icon.png" alt="UI UX Icon">
+                </div>
+                <h3>UI/UX Designer</h3>
+                <p>Creating dynamic and visually appealing designs for websites and apps. Strong understanding of design systems and patterns. Designing for a seamless user experience </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="Images/content-creator.png" alt="Content Creator icon">
+                </div>
+                <h3>Content Creator</h3>
+                <p>Turning creativity into digital masterpiece. Writing blogs, articles and web content. Planning and executing content strategies for campaigns. Constantly learning about new trends in the digital space.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="Images/Webdesign.jpeg" alt="Web design icon">
+                </div>
+                <h3>Web Designing</h3>
+                <p>Building websites that speak your brand. Modern, Responsive for every need. Expertise with html, css and javascript. Clean, organized and professional coding style.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="overlay">
+            <div class="contact-container">
+                <h2>Connect with me! If you have any queries</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Phone" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <input type="text" placeholder="Group or Company" required>
+                    <textarea placeholder="How can we help?" rows="5" required></textarea>
+                    <button type="submit">
+                        <span class="icon">✉️</span> Submit
+                    </button>
+                </form>
+                <div id="confirmationMessage" class="hidden">
+                    <p>🎉 Your message has been received! We will connect with you shortly 😊</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
+
+<script src="JS/About.js"></script>
