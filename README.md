@@ -9,8 +9,8 @@ This project helps users to organize their tasks effectively, mark them as compl
 
 ## Acknowledgements ##
 
--- Inspired by minimalist design principles.
--- Built as part of a learning project for web development.
+## -- Inspired by minimalist design principles. ##
+## -- Built as part of a learning project for web development.##
 
 ## Contact ## 
 
