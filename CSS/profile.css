@@ -1,0 +1,175 @@
+.container{
+    max-width:1200px;
+    margin: 23px auto;
+    background-color: #fffdfd;
+    border-radius: 13px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    padding: 23px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.actions{
+    margin-left: 470px;
+}
+
+.header img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-right: 28px;
+    object-fit: cover;
+}
+
+.header h1{
+    margin: 0;
+}
+
+.header p{
+    color: #777;
+    margin: 5px auto;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-bottom: 2px solid #0066ff;
+}
+
+.stats div{
+    text-align:center;
+}
+
+.stats div h3{
+    margin: 0;
+}
+
+.skills{
+    margin: 20px 0;
+    
+}
+
+.profile{
+    border: 3px solid #0066ff;
+}
+
+.skills span{
+    display: inline-block;
+    background-color: #0066ff;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.fol:hover{
+    padding: 12px;
+    border-radius: 12px;
+    color: white;
+    background-color: #0066ff;
+    border: none;
+}
+
+.bio{
+    margin: 20px 0;
+}
+
+.bio h2{
+    color: #333333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0066ff;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.bio ul li{
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.Certify{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge{
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 13px;
+    padding: 17px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.badge img{
+    width: 150px;
+    height: 150px;
+}
+
+.connect{
+    padding: 12px 22px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.connect:hover{
+    background-color: white;
+    color: #0066ff;
+    border: 2px solid #0066ff;
+}
+
+.footer {
+    background-color: #0066ff;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px){
+    .navbar-links{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .badge{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .connect {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+}
